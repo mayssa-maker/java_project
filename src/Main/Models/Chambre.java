@@ -1,15 +1,16 @@
+package Main.Models;
 
 public class Chambre {
     private int numero;
     private String type;
     private double tarif;
-    private Hotel hotel;
+    private String hotelName;
 
-    public Chambre(int numero, String type, double tarif,Hotel hotel ) {
+    public Chambre(int numero, String type, double tarif,String hotelName ) {
         this.numero = numero;
         this.type = type;
         this.tarif = tarif;
-        this.hotel = hotel;
+        this.hotelName = hotelName;
     }
 
   
@@ -31,8 +32,8 @@ public class Chambre {
         return tarif;
     }
 
-    public Hotel getHotel() {
-        return hotel;
+    public String getHotel() {
+        return hotelName;
     }
 
     public Chambre getReservation() {
@@ -51,8 +52,8 @@ public class Chambre {
         this.tarif=d;
     }
 
-    public void setHotel(Hotel hotel1) {
-        this.hotel=hotel1;
+    public void setHotel(String hotel1) {
+        this.hotelName=hotel1;
     }
     
 }

@@ -4,7 +4,41 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "ManageReservationsFrame",
+            "request": "launch",
+            "mainClass": "Main.UI.ManageReservationsFrame",
+            "projectName": "javaproject_3225b73f"
+        },
+        {
+            "type": "java",
+            "name": "ManageHotelsFrame",
+            "request": "launch",
+            "mainClass": "Main.UI.ManageHotelsFrame",
+            "projectName": "javaproject_3225b73f"
+        },
+        {
+            "type": "java",
+            "name": "ManageChambresFrame",
+            "request": "launch",
+            "mainClass": "Main.UI.ManageChambresFrame",
+            "projectName": "javaproject_3225b73f"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "Main.App",
+            "projectName": "javaproject_3225b73f"
+        },
+        {
+            "type": "java",
+            "name": "ManageClientsFrame",
+            "request": "launch",
+            "mainClass": "Main.UI.ManageClientsFrame",
+            "projectName": "javaproject_3225b73f"
+        },
         {
             "type": "java",
             "name": "Current File",
@@ -17,7 +51,7 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "javaproject_3225b73f",
-            "vmArgs": "--module-path  \"/home/maysa/Bureau/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib\" --add-modules javafx.controls,javafx.fxml",
+            "vmArgs": "--module-path  \"/home/maysa/Bureau/openjfx-20.0.1_linux-x64_bin-sdk/javafx-sdk-20.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }

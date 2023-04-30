@@ -1,3 +1,4 @@
+package Main.Models;
 
 import java.time.LocalDate;
 
@@ -7,15 +8,23 @@ public class Reservation {
     private LocalDate dateFin;
 
     private int chambrenum;
-    private Client client;
-    private Hotel hotel;
+    private String clientmail;
+    private String hotelname;
 
-    public Reservation(Hotel hotel,LocalDate dateDebut, LocalDate dateFin, int chambrenum, Client client) {
-        this.hotel = hotel;
+    public String getHotelname() {
+        return hotelname;
+    }
+
+    public void setHotelname(String hotelname) {
+        this.hotelname = hotelname;
+    }
+
+    public Reservation(String hotelname,LocalDate dateDebut, LocalDate dateFin, int chambrenum, String clientmail) {
+        this.hotelname = hotelname;
         this.dateDebut = dateDebut;
         this.dateFin = dateFin;
         this.chambrenum = chambrenum;
-        this.client = client;
+        this.clientmail = clientmail;
         
     }
 
@@ -31,13 +40,11 @@ public class Reservation {
         this.chambrenum = chambrenum;
     }
 
-    public void setClient(Client client) {
-        this.client = client;
+    public void setClientmail(String clientmail) {
+        this.clientmail = clientmail;
     }
 
-    public void setHotel(Hotel hotel) {
-        this.hotel = hotel;
-    }
+   
 
     public LocalDate getDateDebut() {
         return dateDebut;
@@ -47,16 +54,13 @@ public class Reservation {
         return dateFin;
     }
 
-    public int getChambre() {
+    public int getChambrenum() {
         return this.chambrenum;
     }
 
-    public Client getClient() {
-        return client;
+    public String getClientmail() {
+        return clientmail;
     }
 
-    public Hotel getHotel() {
-    
-        return this.hotel;
-    }
+ 
 }

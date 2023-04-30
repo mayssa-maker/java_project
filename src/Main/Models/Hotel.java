@@ -1,3 +1,4 @@
+package Main.Models;
 public class Hotel {
     private String nom;
     private String adresse;
@@ -25,6 +26,12 @@ public class Hotel {
 
     public Chambre[] getChambres() {
         return chambres;
+    }
+
+    public void setNom(String text) {
+    }
+
+    public void setAdresse(String text) {
     }
     
 }

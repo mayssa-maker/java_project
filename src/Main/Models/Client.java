@@ -1,23 +1,18 @@
+package Main.Models;
 
 public class Client {
-    private String nom;
+    private String name;
     private String email;
     private String telephone;
 
-
-
-
-    public Client(String nom, String email, String telephone) {
-        this.nom = nom;
+    public Client(String name, String email, String telephone) {
+        this.name = name;
         this.email = email;
         this.telephone = telephone;
     }
 
-    public Client(String clientName) {
-    }
-
-    public String getNom() {
-        return nom;
+    public String getName() {
+        return name;
     }
 
     public String getEmail() {
@@ -27,8 +22,9 @@ public class Client {
     public String getTelephone() {
         return telephone;
     }
-    public void setNom(String nom) {
-        this.nom = nom;
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setEmail(String email) {
@@ -38,5 +34,5 @@ public class Client {
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
-    
 }
+

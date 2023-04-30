@@ -1,4 +1,11 @@
+package Main;
 import javax.swing.*;
+
+import Main.UI.ManageChambresFrame;
+import Main.UI.ManageClientsFrame;
+import Main.UI.ManageHotelsFrame;
+import Main.UI.ManageReservationsFrame;
+
 import java.awt.*;
 
 public class App {
@@ -8,6 +15,7 @@ public class App {
         JFrame frame = new JFrame("Hotel Management System");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 500);
+
 
         // Create a JPanel and set its layout to GridLayout
         JPanel panel = new JPanel();
@@ -33,7 +41,7 @@ public class App {
                       ManageClientsFrame manageClientsFrame = new ManageClientsFrame();
                       manageClientsFrame.setVisible(true);
                   });
-        JButton manageReservationsButton = new JButton("Manage clients");
+        JButton manageReservationsButton = new JButton("Manage Reservations");
                   manageReservationsButton.addActionListener(e -> {
                            // Create a new instance of ManageChambresFrame and show it
                            ManageReservationsFrame manageReservationsFrame = new ManageReservationsFrame();
@@ -45,6 +53,7 @@ public class App {
         panel.add(manageChambresButton);
         panel.add(manageClientsButton);
         panel.add(manageReservationsButton);
+        
 
 
         // Add the panel to the main frame
@@ -56,6 +65,5 @@ public class App {
 
     public void setVisible(boolean b) {
     }
+
 }
-
-
